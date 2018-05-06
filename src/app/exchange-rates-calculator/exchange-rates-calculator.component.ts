@@ -28,6 +28,8 @@ export class ExchangeRatesCalculatorComponent implements OnInit {
 
   private showTable = false;
 
+  private error_msg;
+
   ngOnInit() {
     
   }
@@ -44,9 +46,7 @@ export class ExchangeRatesCalculatorComponent implements OnInit {
             this.showTable = true;
           },
           error => {
-            if(error.error_msg){
-              console.log(error.error_msg);
-            }
+            console.log(error.error_msg);
           },	
       )  
   }
