@@ -33,6 +33,6 @@ export class DateValidator implements Validator {
             // If no error, return null  
             return null;
         } 
-        return {message: "Please select a date"}; 
+        return {message: 'Please select a date'}; 
     } 
 }
