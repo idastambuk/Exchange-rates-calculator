@@ -1,0 +1,165 @@
+/* Title */
+
+.title h1{
+    background-color: rgb(228, 163, 41);
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+}
+
+/* Page layout ruleset */
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+}
+.calculator-container .calculator-block, .calculator-container .input-block {
+    min-height: 1px;
+    width: 250px;
+    padding-top: 30px;
+}
+.calculator-container .calculator-block {
+    padding-left: 40px;
+}
+@media screen and (max-width: 600px) {
+    .calculator-container .calculator-block {
+        margin-right: 20px;
+        padding-left: 20px;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .calculator-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calculator-block {
+        padding-left: 0;  
+    } 
+    
+}
+
+/* Form ruleset */
+
+.input-parameters {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    padding: 10px;
+}
+input, select {
+    width: 65%;
+    height: 30px;
+    color: #666666;
+    border: 1px solid rgba(102, 102, 102, 0.7);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    font-size: 14px;
+    -webkit-background-color: #fff;
+}
+input {
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+label {
+    margin-right: 10px;
+    color: #666666;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+.submit-button {
+    text-align: right;
+    margin-right: 25px;
+}
+.submit-button button{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.400rem 1rem;
+    font-size: 0.9rem;
+    background-color:rgb(0, 90, 169);
+    border-color: rgb(0, 90, 169);
+    color: #ffff;
+}
+.submit-button button[disabled]{
+    cursor: not-allowed;
+    opacity: .50;
+}
+
+/* Validity ruleset */
+
+.valid .form-control{
+    border: 2px solid rgb(113, 190, 113);
+}
+.valid .form-control:focus{
+    box-shadow: none;
+    outline-style: none;
+    border-color: rgb(113, 190, 113);;
+}
+.invalid .form-control{
+    border: 2px solid rgb(248, 145, 139);
+}
+.invalid .form-control:focus{
+    box-shadow: none;
+    outline-style: none;
+    border-color: rgb(248, 145, 139);  
+}
+p.warning {
+    font-style: italic;
+    font-size: 12px;
+    color: #005aa9;
+    padding-top: 7px;
+    text-align: center;
+}
+
+/* Table ruleset */
+
+table{ 
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:3px;
+    overflow:hidden;
+    max-width:800px; 
+    width:100%;
+    margin:0 auto;
+    position:relative;
+}   
+table td, table th{
+    padding-left:8px
+}
+table th[sortableColumn]{
+    cursor: pointer;
+}
+th.asc:after {
+    content: "\25BE";
+    margin-left: 2px;
+}
+th.desc:after {
+    content: "\25B4";
+    margin-left: 2px;
+}
+table thead tr { 
+    height:45px;
+    background:rgb(228, 163, 41);
+    font-size:16px;
+    color: #fff;
+}
+table tbody tr { 
+    height:48px; 
+    border-bottom:1px solid rgb(123, 221, 221) ;
+}
+table tbody tr:last-child  { 
+    border:0; 
+} 
+.base-currency{
+    color: red;
+}
+
+

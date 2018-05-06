@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: Roboto, sans-serif;
+}
+.button-navigate button {
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 20px 10px;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(228, 163, 41);
+    border-color: rgb(228, 163, 41);
+    color: #fff;
+    -webkit-appearance: none;
+}
