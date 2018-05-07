@@ -44,6 +44,7 @@ export class ExchangeRatesCalculatorComponent implements OnInit {
             this.data = response.rates;
             this.ratesHandler(this.data);
             this.showTable = true;
+            document.querySelector('#currency-column').setAttribute("class", "asc");
           },
           error => {
             console.log(error.error_msg);
