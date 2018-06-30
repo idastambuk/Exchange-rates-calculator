@@ -1,7 +1,5 @@
 # ExchangeRates
 
-n.b.: Even though the doc stated I shouldn't install any 3rd party dependencies, I did install one - the polyfill for the input type = "date", for Safari and IE.
-
 The code was tested in Chrome, Mozilla and Safari. I was unable to test on IE, since I'm working on a MacOS machine. 
 
 
